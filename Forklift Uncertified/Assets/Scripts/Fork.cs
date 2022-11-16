@@ -7,16 +7,31 @@ public class Fork : MonoBehaviour
     private Vector2 mousePosition;
     public float speed;
     public Rigidbody2D fork;
+    private SliderJoint2D forkSlider;
+    private JointMotor2D forkMotor;
 
-    void FixedUpdate()
+    private void Start()
     {
+        forkSlider = GetComponent<SliderJoint2D>();
+        forkMotor = forkSlider.motor;
+    }
+
+    void Update()
+    { //This doesn't work
         if (Input.GetKey(KeyCode.W))
         {
-            fork.AddForce (Vector2.up * speed);
+            forkMotor.motorSpeed = -speed;
+            forkSlider.motor = forkMotor;
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            fork.AddForce(Vector2.down * speed);
+            forkMotor.motorSpeed = speed;
+            forkSlider.motor = forkMotor;
+        }
+        else
+        {
+            forkMotor.motorSpeed = 0;
+            forkSlider.motor = forkMotor;
         }
     }
 }

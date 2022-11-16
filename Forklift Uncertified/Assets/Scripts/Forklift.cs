@@ -7,11 +7,6 @@ public class Forklift : MonoBehaviour
     public Rigidbody2D body;
     public float speed;
 
-    void Start()
-    {
-
-    }
-
     void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.A))
