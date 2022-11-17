@@ -125,10 +125,27 @@ TextureImporter:
         width: 47
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -13.5, y: -2.5}
+        - {x: -20.5, y: -2.5}
+        - {x: -20.5, y: 21.5}
+        - {x: -23.5, y: 21.5}
+        - {x: -23.5, y: -13.5}
+        - {x: -17.5, y: -21.5}
+        - {x: -11.5, y: -21.5}
+        - {x: -8.5, y: -18.5}
+        - {x: 7.5, y: -18.5}
+        - {x: 10.5, y: -21.5}
+        - {x: 17.5, y: -21.5}
+        - {x: 19.5, y: -17.5}
+        - {x: 23.5, y: -17.5}
+        - {x: 23.5, y: -0.5}
+        - {x: 10.5, y: -0.5}
+        - {x: 7.5, y: 14.5}
+        - {x: -10.5, y: 14.5}
       tessellationDetail: 0
       bones: []
       spriteID: 3860d544d7ef5a8488c07e7c3be27fce
@@ -146,10 +163,27 @@ TextureImporter:
         width: 47
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -10.5, y: 14}
+        - {x: -13.5, y: -3}
+        - {x: -20.5, y: -3}
+        - {x: -20.5, y: 21}
+        - {x: -23.5, y: 21}
+        - {x: -23.5, y: -14}
+        - {x: -18.5, y: -21}
+        - {x: -11.5, y: -21}
+        - {x: -8.5, y: -18}
+        - {x: 6.5, y: -18}
+        - {x: 10.5, y: -21}
+        - {x: 16.5, y: -21}
+        - {x: 19.5, y: -18}
+        - {x: 23.5, y: -18}
+        - {x: 23.5, y: -1}
+        - {x: 10.5, y: -1}
+        - {x: 7.5, y: 14}
       tessellationDetail: 0
       bones: []
       spriteID: 5c16a88f40a123c4bb21b3c16ea34a74
@@ -167,10 +201,27 @@ TextureImporter:
         width: 47
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 7.5, y: 14.5}
+        - {x: -10.5, y: 14.5}
+        - {x: -13.5, y: -2.5}
+        - {x: -20.5, y: -2.5}
+        - {x: -20.5, y: 21.5}
+        - {x: -23.5, y: 21.5}
+        - {x: -23.5, y: -13.5}
+        - {x: -17.5, y: -21.5}
+        - {x: -11.5, y: -21.5}
+        - {x: -8.5, y: -18.5}
+        - {x: 7.5, y: -18.5}
+        - {x: 10.5, y: -21.5}
+        - {x: 17.5, y: -21.5}
+        - {x: 19.5, y: -17.5}
+        - {x: 23.5, y: -17.5}
+        - {x: 23.5, y: -0.5}
+        - {x: 10.5, y: -0.5}
       tessellationDetail: 0
       bones: []
       spriteID: 0bb8bdd68c3a13646bb52491fc38462f
