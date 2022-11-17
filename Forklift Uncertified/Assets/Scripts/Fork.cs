@@ -4,34 +4,47 @@ using UnityEngine;
 
 public class Fork : MonoBehaviour
 {
-    private Vector2 mousePosition;
     public float speed;
+    public SliderJoint2D forkSlider;
     public Rigidbody2D fork;
-    private SliderJoint2D forkSlider;
+    
     private JointMotor2D forkMotor;
+    private float distance;
+    private Vector2 forkPos;
 
     private void Start()
     {
-        forkSlider = GetComponent<SliderJoint2D>();
-        forkMotor = forkSlider.motor;
+        forkMotor = forkSlider.motor;        
     }
 
-    void Update()
-    { //This doesn't work
-        if (Input.GetKey(KeyCode.W))
+    void FixedUpdate()
+    {        
+        Vector2 mousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+        Vector2 forkPos = this.transform.position;
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+        mousePos.x = 0;
+        forkPos.x = 0;
+        distance = Vector2.Distance(mousePos, forkPos);
+        speed = distance * 2;
+
+        if (Input.GetMouseButton(0) & distance > 0.3)
         {
-            forkMotor.motorSpeed = -speed;
-            forkSlider.motor = forkMotor;
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            forkMotor.motorSpeed = speed;
-            forkSlider.motor = forkMotor;
+            if (mousePos.y < forkPos.y)
+            {
+                forkMotor.motorSpeed = speed;
+                forkSlider.motor = forkMotor;
+            }
+            else if (mousePos.y > forkPos.y)
+            {
+                forkMotor.motorSpeed = -speed;
+                forkSlider.motor = forkMotor;
+            }
+
         }
         else
         {
             forkMotor.motorSpeed = 0;
             forkSlider.motor = forkMotor;
-        }
+        }        
     }
 }
