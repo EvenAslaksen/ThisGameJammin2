@@ -27,7 +27,7 @@ public class Fork : MonoBehaviour
         distance = Vector2.Distance(mousePos, forkPos);
         speed = distance * 2;
 
-        if (Input.GetMouseButton(0) & distance > 0.3)
+        if (Input.GetMouseButton(0) & distance > 0.1)
         {
             if (mousePos.y < forkPos.y)
             {
