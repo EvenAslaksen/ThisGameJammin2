@@ -7,6 +7,7 @@ public class Fork : MonoBehaviour
     public float speed;
     public SliderJoint2D forkSlider;
     public Rigidbody2D fork;
+    public bool hasTurned = false;
     
     private JointMotor2D forkMotor;
     private float distance;
@@ -14,9 +15,9 @@ public class Fork : MonoBehaviour
 
     private void Start()
     {
-        forkMotor = forkSlider.motor;        
-    }
+        forkMotor = forkSlider.motor;
 
+    }
     void FixedUpdate()
     {        
         Vector2 mousePos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
@@ -45,6 +46,7 @@ public class Fork : MonoBehaviour
         {
             forkMotor.motorSpeed = 0;
             forkSlider.motor = forkMotor;
-        }        
+        }
     }
+
 }

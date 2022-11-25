@@ -30,9 +30,10 @@ Transform:
   m_GameObject: {fileID: 1563214404624103529}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.65, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5782085841074378716}
   m_Father: {fileID: 5782085842008690698}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -214,12 +215,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5782085841074378717}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.854, y: 0, z: 0}
-  m_LocalScale: {x: 1.25, y: 0.074999996, z: 1}
+  m_LocalPosition: {x: -0.3708, y: -0.13, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.015, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5782085842008690698}
-  m_RootOrder: 2
+  m_Father: {fileID: 6707425331804048623}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5782085841074378713
 SpriteRenderer:
@@ -361,6 +362,7 @@ MonoBehaviour:
   speed: 50
   forkSlider: {fileID: 5782085841074378661}
   fork: {fileID: 5782085841074378714}
+  hasTurned: 0
 --- !u!1 &5782085842008690699
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,7 +393,6 @@ Transform:
   m_Children:
   - {fileID: 8310747199402485640}
   - {fileID: 6707425331804048623}
-  - {fileID: 5782085841074378716}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
