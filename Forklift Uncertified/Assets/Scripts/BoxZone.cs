@@ -12,7 +12,7 @@ public class BoxZone : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.GetComponent<WinnerBox>() == null)
+        if (other.GetComponent<WinnerBox>() != null)
             GameController.instance.BoxExitZone();
     }
 }
