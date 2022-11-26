@@ -20,6 +20,17 @@ public class GameController : MonoBehaviour
             Destroy(gameObject);
         } //"Singleton pattern"; Restricts itself to only one existing at a time to prevent other scripts from reading from multiple instances
     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SceneManager.LoadScene("Dennis level");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SceneManager.LoadScene("Level 2");
+        }
+    }
 
     public void BoxEnterZone()
     {
