@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Even.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/Dennis level.unity
     guid: a03402c2007530c45a193022f41f1b7b
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 6231b078ef0cb5f44b77f5cada6b758a
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: a312afbb68bb9be4fb5668ac7dcd1fc1
+  - enabled: 1
+    path: Assets/Scenes/Level 4.unity
+    guid: 98c54f9134272ac4ba63464b5209fb33
+  - enabled: 1
+    path: Assets/Scenes/Level 5.unity
+    guid: c8ed96e169516684bb45abd4c684bfdf
   m_configObjects: {}

@@ -32,6 +32,18 @@ public class GameController : MonoBehaviour
         {
             SceneManager.LoadScene("Level 2");
         }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SceneManager.LoadScene("Level 3");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SceneManager.LoadScene("Level 4");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            SceneManager.LoadScene("Level 5");
+        }
     }
 
     public void BoxEnterZone()
