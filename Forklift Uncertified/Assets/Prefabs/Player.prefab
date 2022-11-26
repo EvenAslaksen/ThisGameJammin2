@@ -493,6 +493,7 @@ GameObject:
   - component: {fileID: 2462959011611703980}
   - component: {fileID: 3015574628251157233}
   - component: {fileID: 9073504617216353899}
+  - component: {fileID: 7944349916839489760}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -592,3 +593,16 @@ ParentConstraint:
   m_Sources:
   - sourceTransform: {fileID: 6707425331804048623}
     weight: 1
+--- !u!114 &7944349916839489760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8718570000074529681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bdb7b77dd6cc0b40b20e51251396a2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomLerpSpeed: 10
