@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
     public static GameController instance;
     public bool boxInZone = false;
     public bool playerInZone = false;
+    public GameObject youwin;
 
     void Awake()                //Activates earleir than Start function
     {
@@ -38,6 +40,7 @@ public class GameController : MonoBehaviour
         if (boxInZone == true && playerInZone == true)
         {
             Debug.Log("You win :)");
+            youwin.SetActive(true);
         }
     }
     public void BoxExitZone()
@@ -51,6 +54,7 @@ public class GameController : MonoBehaviour
         if (boxInZone == true && playerInZone == true)
         {
             Debug.Log("You win :)");
+            youwin.SetActive(true);
         }
     }
     public void PlayerExitZone()
